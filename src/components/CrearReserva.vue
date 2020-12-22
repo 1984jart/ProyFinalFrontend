@@ -64,7 +64,7 @@ import axios from 'axios'
                 fecha_final: this.fecha_fin,
                 tipo_hab: this.tipo_habitacion
             }
-            axios.post("http://127.0.0.1:8000/reserva/crear", rsrvJSON).then(respuesta=>{
+            axios.post("https://frontend-proyhotel.herokuapp.com/reserva/crear", rsrvJSON).then(respuesta=>{
                 alert(respuesta.data.mensaje);
                 this.identificacion="";
                 this.nombre="";

@@ -36,7 +36,7 @@ export default {
   },
   beforeCreate: function() {
     axios
-      .get("http://127.0.0.1:8000/reserva/listar")
+      .get("https://frontend-proyhotel.herokuapp.com/reserva/listar")
       .then(respuesta => {
         this.reservas = respuesta.data;
       })

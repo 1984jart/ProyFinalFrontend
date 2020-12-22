@@ -46,7 +46,7 @@ export default {
         verRsrv:function()
         {
              axios
-            .get("http://127.0.0.1:8000/reserva/vista/"+this.cod_reserva)
+            .get("https://frontend-proyhotel.herokuapp.com/reserva/vista/"+this.cod_reserva)
             .then(respuesta=>{
             respuesta.data;
             this.nombre=respuesta.data.nombre;
