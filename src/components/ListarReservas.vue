@@ -36,7 +36,7 @@ export default {
   },
   beforeCreate: function() {
     axios
-      .get("https://frontend-proyhotel.herokuapp.com/reserva/listar")
+      .get("https://final-proymintic-backend.herokuapp.com/reserva/listar")
       .then(respuesta => {
         this.reservas = respuesta.data;
       })

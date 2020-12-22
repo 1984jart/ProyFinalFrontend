@@ -64,7 +64,7 @@ import axios from 'axios'
                 fecha_final: this.fecha_fin,
                 tipo_hab: this.tipo_habitacion
             }
-            axios.post("https://frontend-proyhotel.herokuapp.com/reserva/crear", rsrvJSON).then(respuesta=>{
+            axios.post("https://final-proymintic-backend.herokuapp.com/reserva/crear", rsrvJSON).then(respuesta=>{
                 alert(respuesta.data.mensaje);
                 this.identificacion="";
                 this.nombre="";
@@ -73,7 +73,7 @@ import axios from 'axios'
                 this.tipo_habitacion=""
                 
             }).catch(error=>{
-                alert("Error en la creación ")
+                alert("Error en la creación. ")
             })
 
         }
